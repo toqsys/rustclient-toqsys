@@ -73,7 +73,8 @@ jobs:
       with:
         toolchain: ${{ env.RUST_VERSION }}
         targets: x86_64-pc-windows-msvc
-        components: -rustfmt
+        components: 
+          - rustfmt
         
     - uses: Swatinem/rust-cache@v2
       with:
