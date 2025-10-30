@@ -423,7 +423,7 @@ jobs:
           if ($LASTEXITCODE -eq 0) {
             Write-Host "[SUCCESS] Installer created successfully"
           } else {
-            Write-Host ⚠️ Installer creation failed, but continuing..."
+            Write-Host "Installer creation failed, but continuing..."
           }
         }
         
