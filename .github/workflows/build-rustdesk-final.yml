@@ -226,7 +226,7 @@ jobs:
         
         Write-Host "[SUCCESS] Configuration applied successfully"
         
-        - name: Generate inline module
+      - name: Generate inline module
       shell: powershell
       run: |
         Write-Host "=== Generating inline UI module ==="
