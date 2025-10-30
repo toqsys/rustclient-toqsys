@@ -1,0 +1,48 @@
+{
+  "name": "rustdesk-client-generator",
+  "private": true,
+  "version": "1.0.6",
+  "type": "module",
+  "description": "Generador de clientes RustDesk personalizados con configuración hardcodeada",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && gh-pages -d dist",
+    "version:patch": "node scripts/bump-version.js patch",
+    "version:minor": "node scripts/bump-version.js minor",
+    "version:major": "node scripts/bump-version.js major"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "clsx": "^2.0.0",
+    "js-file-download": "^0.4.12",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "tailwind-merge": "^2.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.1.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+}
